@@ -114,8 +114,8 @@ module.exports = async(chika, msg, m, ind, setting) => {
         
         //Please dont edit for urlbutton 
         const buttonsDefault = [
-            { callButton: {displayText: `☎ ️Call Owner`, phoneNumber: `+628127668234`} },
-            { urlButton: { displayText: `💠 Script Bot`, url : `https://github.com/rashidsiregar28/chikabot`} },
+            { callButton: {displayText: `☎ ️Call Owner`, phoneNumber: `+94`} },
+            { urlButton: { displayText: `BOT KINGDOM`, url : `https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV`} },
             { quickReplyButton: { displayText: `🧑 Owner`, id: `${prefix}owner` } },
             { quickReplyButton: { displayText: `🎛️ Rules`, id: `${prefix}rules` } }
         ]
@@ -170,7 +170,7 @@ module.exports = async(chika, msg, m, ind, setting) => {
                 textTemplateButtons(from, `Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Multi-Device* Whatsapp.`, `Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya 😖, Lapor Owner Jika Perlu atau Mendesak 🙏`, buttonsDefault)
             }
             break
-            case prefix+'allmenu': {
+            case prefix+'menu': {
                 try {
                     var prof = await chika.profilePictureUrl(sender, 'image')
                 } catch {
